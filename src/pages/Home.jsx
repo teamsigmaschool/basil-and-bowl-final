@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  // useNavigate returns a function that can change the current route.
   const navigate = useNavigate();
 
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           Fresh, seasonal plates in the heart of downtown. Order at the
           counter, or grab a table and stay a while.
         </p>
+        {/* Open the Menu page when the user clicks the button. */}
         <button
           type="button"
           className="btn button"
